@@ -1,0 +1,12 @@
+<!-- <!DOCTYPE dwr PUBLIC
+   "-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN"
+   "http://www.getahead.ltd.uk/dwr/dwr10.dtd"> -->
+<dwr>
+	<allow>
+		<create creator="new" javascript="Cc">
+			<param name="class" value="com.test.Mojo" />
+		</create>
+		 <!-- <convert converter="customer" match="com.test.Customer"/> -->
+		 <convert converter="bean" match="com.test.Customer" javascript="Customer"/>
+	</allow>
+</dwr>
